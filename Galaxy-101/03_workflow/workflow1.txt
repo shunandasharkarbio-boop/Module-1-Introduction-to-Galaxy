@@ -1,0 +1,74 @@
+class: Workflow
+label: Find exons with the highest number of features
+cwlVersion: v1.2
+inputs:
+  Exons:
+    id: Exons
+    type: File
+  SNPs:
+    id: SNPs
+    type: File
+outputs:
+  '''out_file1''':
+    outputSource: 5/outfile
+    type: File
+  out_file1:
+    outputSource: 6/out_file1
+    type: File
+steps:
+  '2':
+    run:
+      class: Operation
+      doc: ''
+      inputs: {}
+      outputs: {}
+    in:
+      inputA:
+        source: Exons
+      reduce_or_iterate|inputB:
+        source: SNPs
+    out: []
+  '3':
+    run:
+      class: Operation
+      doc: ''
+      inputs: {}
+      outputs: {}
+    in:
+      in_file:
+        source: '2'
+    out: []
+  '4':
+    run:
+      class: Operation
+      doc: ''
+      inputs: {}
+      outputs: {}
+    in:
+      infile:
+        source: 3/out_file
+    out: []
+  '5':
+    run:
+      class: Operation
+      doc: ''
+      inputs: {}
+      outputs: {}
+    in:
+      infile:
+        source: 4/outfile
+    out:
+    - outfile
+  '6':
+    run:
+      class: Operation
+      doc: ''
+      inputs: {}
+      outputs: {}
+    in:
+      input2:
+        source: 5/outfile
+      input1:
+        source: Exons
+    out:
+    - out_file1
