@@ -1,50 +1,126 @@
-# SNP Analysis in Coding Exons (Human Chromosome 22) using Galaxy
+# 🧬 SNP Analysis in Coding Exons of Human Chromosome 22 using Galaxy
 
-## Project Overview
-This project was performed using the Galaxy platform to identify the coding exon on human chromosome 22 that contains the highest number of single nucleotide polymorphisms (SNPs). The workflow demonstrates basic bioinformatics operations including data acquisition, processing, and analysis in a reproducible environment.
+## 📖 Overview
 
-## Research Question
-Which coding exon on human chromosome 22 has the highest number of SNPs?
+This project demonstrates a reproducible bioinformatics workflow using the **Galaxy** platform to identify the **coding exon on human chromosome 22 with the highest number of Single Nucleotide Polymorphisms (SNPs)**.
 
-## Objectives
-- Understand the basics of the Galaxy platform
-- Learn how to obtain genomic data from external sources
-- Perform tool-based bioinformatics analysis
-- Understand Galaxy history management
-- Create and interpret workflows
-- Share reproducible analysis results
+The analysis introduces fundamental genomic data processing techniques, including data retrieval, filtering, SNP counting, and result interpretation, while highlighting Galaxy's workflow-based approach to reproducible research.
 
-## Methodology
-1. **Data Acquisition**
-   - Retrieved human chromosome 22 genomic/exon-related data from external databases
+---
 
-2. **Data Processing**
-   - Filtered coding exon regions
-   - Prepared datasets for SNP analysis
+## 🎯 Research Question
 
-3. **SNP Analysis**
-   - Counted SNP occurrences in each coding exon
-   - Identified exon with maximum SNP density
+> **Which coding exon on human chromosome 22 contains the highest number of SNPs?**
 
-4. **Result Interpretation**
-   - Compared SNP counts across all coding exons
-   - Determined the exon with the highest variation
+---
 
-## Tools Used
-- Galaxy Project platform
-- Standard genomic data tools available in Galaxy (filtering, counting, and annotation tools)
+## 📌 Objectives
 
-## Results
-The coding exon with the highest number of SNPs on human chromosome 22 was identified through comparative analysis of SNP counts across all exons.
+- Learn the fundamentals of the Galaxy platform
+- Retrieve genomic datasets from external repositories
+- Process and filter coding exon data
+- Perform SNP-based comparative analysis
+- Build reproducible bioinformatics workflows
+- Interpret and share analysis results
 
-## Conclusion
-This analysis demonstrates how Galaxy can be used to perform reproducible genomic data analysis and identify regions of high genetic variation.
+---
 
-## Learning Outcomes
-- Basic workflow creation in Galaxy
-- Working with genomic datasets
-- Performing SNP-based comparative analysis
-- Understanding reproducible research concepts
+## 🔬 Methodology
 
-## Notes
-This workflow can be extended to other chromosomes or genomic features for comparative genetic studies.
+### 1️⃣ Data Acquisition
+- Retrieved genomic and exon annotation data for **Human Chromosome 22**
+- Imported datasets into the Galaxy platform for analysis
+
+### 2️⃣ Data Preparation
+- Filtered coding exon regions
+- Cleaned and organized datasets for downstream analysis
+
+### 3️⃣ SNP Analysis
+- Counted the number of SNPs within each coding exon
+- Compared SNP frequencies across all coding exons
+
+### 4️⃣ Result Interpretation
+- Identified the exon containing the highest SNP count
+- Evaluated genomic variation across coding regions
+
+---
+
+## 🛠️ Tools Used
+
+- 🧬 Galaxy Platform
+- 📂 Data Upload & Management
+- 🔍 Filtering Tools
+- 📊 Count & Statistics Tools
+- 📝 Genomic Annotation Utilities
+- 💻 Git & GitHub
+
+---
+
+## 📈 Workflow Summary
+
+```text
+Genomic Data
+      │
+      ▼
+Import into Galaxy
+      │
+      ▼
+Filter Coding Exons
+      │
+      ▼
+Count SNPs per Exon
+      │
+      ▼
+Compare SNP Counts
+      │
+      ▼
+Identify Exon with Highest SNP Density
+```
+
+---
+
+## 📊 Results
+
+The workflow successfully identified the **coding exon on Human Chromosome 22 with the highest SNP count** by comparing the number of variants present in each exon.
+
+This demonstrates how Galaxy can efficiently process genomic datasets to detect regions with high levels of genetic variation.
+
+---
+
+## ✅ Conclusion
+
+This project illustrates the use of **Galaxy** as a reproducible bioinformatics platform for genomic data analysis. By combining data filtering, SNP counting, and comparative analysis, the workflow enables efficient identification of highly variable coding exons.
+
+The exercise also provides practical experience in organizing genomic datasets and executing workflow-based analyses.
+
+---
+
+## 🎓 Learning Outcomes
+
+Through this project, I learned how to:
+
+- Navigate and use the Galaxy platform
+- Import and manage genomic datasets
+- Filter coding exon annotations
+- Perform SNP-based comparative analyses
+- Interpret genomic variation results
+- Develop reproducible bioinformatics workflows
+- Document scientific analyses using GitHub
+
+---
+
+## 🚀 Future Improvements
+
+Potential extensions of this project include:
+
+- 🌍 Analyze additional human chromosomes
+- 🧬 Compare SNP distributions across multiple populations
+- 📊 Visualize SNP density using genome browsers
+- 🔄 Automate the workflow using Galaxy workflows
+- 📈 Integrate functional annotation of high-variation exons
+
+---
+
+## 📄 License
+
+This repository is intended for **educational and academic purposes**. The analysis was conducted using publicly available datasets and the Galaxy platform to demonstrate reproducible genomic data analysis.
